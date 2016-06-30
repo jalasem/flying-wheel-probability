@@ -11,13 +11,13 @@ function flywheel(possiblities){
   var spin = Math.floor(Math.random() * (sumofArray ));
   
   if(0 < spin && spin < ( possiblities[0] + 1)){
-    return possiblities[0];
+    return "Entry value: " + possiblities[0] + ", spin value: " + spin;
   } else if((possiblities[0]) < spin && spin < (possiblities[0] + possiblities[1] + 1)){
-    return possiblities[1];
+    return "Entry value: " + possiblities[1] + ", spin value: " + spin;
   } else if((possiblities[0] + possiblities[1] > spin && spin > (possiblities[0] + possiblities[1] + possiblities[2] + 1))){
-    return possiblities[2];
+    return "Entry value: " + possiblities[2] + ", spin value: " + spin;
   } else {
-    return possiblities[3];
+    return "Entry value: " + possiblities[3] + ", spin value: " + spin;
   }
 }
 
