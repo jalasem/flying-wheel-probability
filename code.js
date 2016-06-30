@@ -21,6 +21,24 @@ function flywheel(possiblities){
   }
 }
 
+/*
+A better way of implementing this is:
+function flywheel(possiblities){
+  function arrayTotal(theArray){
+    var total = 0;
+    for(var i = 0; i < theArray.length; i++){
+      total  += theArray[i];
+    }
+    return total;
+  }
+  var sumofArray = arrayTotal(possiblities);
+  var spin = Math.floor(Math.random() * (sumofArray));
+  return spin;
+}
+
+flywheel([5,4,1,3]);
+*/
+
 flywheel(possibleNumbers);
 flywheel(possibleNumbers);
 flywheel(possibleNumbers);
